@@ -8,14 +8,14 @@ Please note that the instructions below are OSX specific, please adapt (and feel
 
 ## Requirements
 
-* leiningen 2.6.x +
-* node v0.12.x +
-* grunt v0.1.13 +
+* leiningen 2.8.1 +
+* node v10.14.2 +
+* grunt v1.0.3 +
 
-### (if you don't have grunt installed yet.)
+### (if you don't have grunt, grunt-cli, electron installed yet.)
 
 ```
-$ npm install -g grunt-cli
+npm install -g grunt-cli electron
 ```
 
 
@@ -37,20 +37,6 @@ Done, without errors.
 
 ### step 2
 
-run cljsbuild 
-
-```
-lein clockwork-once
-```
-
-and run extern alias `clockwork-externs`,
-
-```
-$ lein clockwork-externs
-```
-
-### step 4
-
 You can run the desktop application now.
 
 
@@ -60,22 +46,19 @@ development mode use figwheel. run alias `clockwork-figwheel`.  before run appli
 Open other terminal window.
 
 ```
-$ lein clockwork-figwheel
+lein clockwork-once-dev  # cljsbuild
+lein clockwork-externs   # extern alias
+lein clockwork-figwheel
 ```
 
 and you can run Electron(Atom-Shell) app.
 
 ```
-$ ./node_modules/electron/dist/Electron.app/Contents/MacOS/Electron .out/dev
+$ electron .out/dev
 ```
 
-#### production mode
+#### TODO production mode is broken. Fix it!
 
-you can run Electron(Atom-Shell) app.
-
-```
-$ ./node_modules/electron/dist/Electron.app/Contents/MacOS/Electron app/prod
-```
 
 ## Packaging for distribution
 

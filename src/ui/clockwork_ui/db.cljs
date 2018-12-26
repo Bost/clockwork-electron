@@ -2,7 +2,7 @@
   (:require [reagent.core :as r]
             [re-frame.core :as re-frame]
             [cljs.nodejs :as nodejs]
-            [cljs.spec :as s]
+            [cljs.spec.alpha :as s]
             [cljs-time.core :as time]
             [cljs.reader :as edn]
             ))

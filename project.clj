@@ -5,20 +5,20 @@
     :name "Eclipse Public License"
     :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [
-    [org.clojure/clojure "1.8.0"]
-    [org.clojure/clojurescript "1.9.494" :exclusions [org.apache.ant/ant]]
+    [org.clojure/clojure "1.10.0"]
+    [org.clojure/clojurescript "1.10.439" :exclusions [org.apache.ant/ant]]
     ;; [org.clojure/core.async "0.3.441"]
-    [figwheel "0.5.9"]
-    [reagent "0.6.1"]
-    [re-frame "0.9.2"]
-    [ring/ring-core "1.5.0"]
-    [com.andrewmcveigh/cljs-time "0.5.0-alpha2"]
-    [binaryage/devtools "0.9.2"]]
+    [figwheel "0.5.18"]
+    [reagent "0.8.1"]
+    [re-frame "0.10.6"]
+    [ring/ring-core "1.7.1"]
+    [com.andrewmcveigh/cljs-time "0.5.2"]
+    [binaryage/devtools "0.9.10"]]
   :plugins [
-    [lein-cljsbuild "1.1.5"  :exclusions [[org.clojure/clojure]]]
+    [lein-cljsbuild "1.1.7"  :exclusions [[org.clojure/clojure]]]
     [lein-externs "0.1.6"]
     [lein-shell "0.5.0"]
-    [lein-figwheel "0.5.9" :exclusions [org.clojure/core.cache]]]
+    [lein-figwheel "0.5.18" :exclusions [org.clojure/core.cache]]]
   :source-paths ["src/tools"]
 
   ;; Configuration variables used by our own build processes.

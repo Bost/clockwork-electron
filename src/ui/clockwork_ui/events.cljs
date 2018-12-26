@@ -4,7 +4,7 @@
                           trim-v after debug]]
    [cljs-time.core :as time]
    [cljs-time.coerce :as ft]
-   [cljs.spec :as s]
+   [cljs.spec.alpha :as s]
    [clockwork-ui.db :refer [default-value]]
    ))
 
